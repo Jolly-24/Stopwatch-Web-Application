@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="31048.png">
+</head>
+<body class="bgColor">
+    <section>
+        <div class="container d-flex align-items-center justify-content-center flex-column mt-3">
+            <div class="watch p-4 rounded-circle d-flex align-items-center justify-content-center flex-column " style="background-image: url(pexels-photo-998641.jpeg); background-size: cover;">
+            <h1 class="text-center text-white mb-5 display-4 fw-semibold">Stopwatch</h1>
+            <div class="timer d-flex align-items-center justify-content-center gap-3 textColor fs-1 ">
+                <div class="time-box d-flex align-items-center justify-content-center flex-column textColor">
+                    <span class="time-hours fs-1" id="time-hours">00</span>
+                    <span class="time-title fw-semibold fs-5" >Hours</span>
+                </div>
+                :
+                <div class="time-box d-flex align-items-center justify-content-center flex-column textColor">
+                    <span class="time-min fs-1" id="time-min">00</span>
+                    <span class="time-title fw-semibold fs-5">Mins</span>
+                </div>
+                :
+                <div class="time-box d-flex align-items-center justify-content-center flex-column textColor">
+                    <span class="time-sec fs-1" id="time-sec">00</span>
+                    <span class="time-title fw-semibold fs-5">Secs</span>
+                </div>
+            </div>
+            <div class="buttons d-flex align-items-center justify-content-center gap-4 mt-5 ">
+                <button type="button" class="reset btn btn-outline-danger" id="reset">Reset</button>
+                <button type="button" class="start btn btn-outline-primary" id="start" >Start</button>
+                <button type="button" class="stop btn btn-outline-success" id="stop">Pause</button>
+                <button type="button" class="lap btn btn-outline-warning" id="lap">Lap</button>
+            </div>
+        </div>
+            <div class="laps mt-5 d-flex align-items-center justify-content-center gap-2 flex-wrap" id="laps">
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
